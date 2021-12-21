@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {			
             steps {			
                 echo 'DEVELOP UPSTREAM executed'	
-                echo  '${upstreamProject}'
+                echo  ${upstreamProject}
                      }			
         }			
    }		
