@@ -6,7 +6,8 @@ pipeline {
     stages {			
         stage('Build') {			
             steps {			
-                echo 'DEVELOP UPSTREAM executed'		
+                echo 'DEVELOP UPSTREAM executed'	
+                echo  '${upstreamProject}'
                      }			
         }			
    }		
