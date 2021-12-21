@@ -6,7 +6,7 @@ pipeline {
     stages {			
         stage('Build') {			
             steps {			
-                echo 'DEVELOP MASTER UPSTREAM executed'		
+                echo 'DEVELOP UPSTREAM executed'		
                      }			
         }			
    }		
