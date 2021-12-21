@@ -6,7 +6,12 @@ pipeline {
     stages {			
         stage('Build') {			
             steps {			
-                echo 'DEVELOP UPSTREAM executed'	
+                echo 'TRIFFER DEVELOP DOWNSTREAM '
+                build job: 'dev1' , propagate: false
+                echo "Pipeline currentResult: ${currentBuild.currentResult}"
+                
+                build job: 'dev2Multibranch/develop' , propagate: false
+                echo "Pipeline currentResult: ${currentBuild.currentResult}"
                      }			
         }			
    }		
