@@ -6,7 +6,7 @@ pipeline {
     stages {			
         stage('Build') {			
             steps {			
-                echo 'TRIFFER DEVELOP DOWNSTREAM '
+                echo 'TRIGGER DEVELOP DOWNSTREAM '
                 build job: 'dev1' , propagate: false
                 echo "Pipeline currentResult: ${currentBuild.currentResult}"
                 
